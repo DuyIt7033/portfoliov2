@@ -1,20 +1,84 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="./dist/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Poforlio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/style.css" />
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="p-6 bg-blue-500 text-white text-center">
-        <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
-    </header>
-    <main class="p-6">
-        <section>
-            <h2 class="text-2xl font-semibold">About Me</h2>
-            <p class="mt-2">I am a passionate developer.</p>
-        </section>
-    </main>
+
+<body>
+    <!-- Đặt ảnh nền với lớp phủ mờ -->
+    <div class="relative bg-cover bg-center h-screen z-9" style="background-image: url('assets/images/bg.png')">
+        <div class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-12 gap-10">
+            <!-- Phần ảnh và các biểu tượng xã hội chiếm 2 phần -->
+            <div class="col-span-2 flex flex-col items-center justify-center">
+                <!-- Ảnh đại diện -->
+                <div class="flex justify-center items-center mb-4 mt-10">
+                    <img 
+                        alt="Profile picture"
+                        class="profile-img rounded-full mb-0"
+                        src="assets/images/avt1.jpg"
+                        width="100"  
+                        height="100" 
+                    />
+                </div>
+
+                <!-- Các biểu tượng xã hội -->
+                <div class="social-icons mt-4 py-2 flex space-x-4">
+                    <a href="#">
+                        <i class="fab fa-twitter text-white text-2xl"> </i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f text-white text-2xl"> </i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in text-white text-2xl"> </i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Phần văn bản chiếm 8 phần -->
+            <div class="col-span-10">
+                <h1 class="gradient-text p-6 rounded-lg text-7xl font-thin text-white">
+                    Hi, I'm
+                    <b class="text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text">Nhut Duy</b>
+                </h1>
+
+                <p class="backdrop-blur-lg bg-white/1 text-left mt-6 text-lg pr-12 text-white font-thin max-w-8xl">
+                    I have graduated in Computer Networks and am on my way to becoming a
+                    professional programmer. I not only want to build technological
+                    products but also hope to contribute to creating real value for the
+                    community. Although my experience is limited at the moment, I believe
+                    that with continuous learning and a progressive mindset i will become
+                    a skilled programmer.
+                </p>
+                <p class="text-left mt-4 text-lg pr-12 text-white font-thin max-w-4xl">
+                    I have basic experience with
+                    <b style="color: orange"> Python, PHP, and React</b> along with the
+                    ability to develop websites using tools like
+                    <b style="color: orange"> Flask and MySQL </b>. In addition to
+                    programming, I am also interested in machine learning and image
+                    processing. With a progressive mindset, I am always ready to overcome
+                    challenges to achieve my goals.
+                </p>
+            </div>
+        </div>
+        <!-- <hr > -->
+        <div class="flex justify-center items-center mt-20">
+            <div style="width: 1000px;" class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg">
+                <a class="pt-1 text-white" href="#"> HOME </a>
+                <a class="pt-1 text-white" href="#"> PROJECTS </a>
+                <a class="pt-1 text-white" href="#"> SKILLS </a>
+                <a class="pt-1 text-white" href="#"> CONTACT </a>
+                <a class="pt-1 text-white" href="#"> BLOG </a>
+            </div>
+        </div> 
+      </div>
+      
+    </div>
+    
 </body>
 </html>

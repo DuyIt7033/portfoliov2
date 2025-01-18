@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+    60deg,
+    #00091d,
+    #0f172a,
+    #0f172a,
+    #1d294f,
+    #3a576d,
+    #26154a,
+    #0f172a
+    
+  );
+
+  color: #e0e0e0;
+  text-align: center;
+ 
+  
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+.social-icons i {
+  margin: 0 10px;
+  color: #e0e0e0;
+}
+.social-icons i:hover {
+  color: #ffcc00;
+}
+.nav-links a {
+  margin: 0 15px;
+  color: #e0e0e0;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+}
