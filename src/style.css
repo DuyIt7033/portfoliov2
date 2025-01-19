@@ -64,3 +64,7 @@ body {
   height: 48px; /* Kích thước icon */
   width: 48px;
 }
+ .con-p:hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+ }
