@@ -43,3 +43,24 @@ body {
 .nav-links a:hover {
   color: #ffcc00;
 }
+
+/* skills */
+.text-4xl{
+  max-width: 300px;
+}
+.skill-card{
+  border: #305661 3px solid;
+}
+
+.skill-card:hover {
+  transition: 0.5s;
+  transform: scale(1.1); /* Phóng to khi hover */
+  border-color: cyan; /* Đổi màu viền khi hover */
+  background: #fbfbfb ;
+  
+}
+
+.skill-card img {
+  height: 48px; /* Kích thước icon */
+  width: 48px;
+}

@@ -13,29 +13,30 @@
     <!-- Đặt ảnh nền với lớp phủ mờ -->
     <div class="relative bg-cover bg-center h-screen z-9" style="background-image: url('assets/images/bg.png')">
         <div class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-12 gap-10">
-            <!-- Phần ảnh và các biểu tượng xã hội chiếm 2 phần -->
+            
             <div class="col-span-2 flex flex-col items-center justify-center">
-                <!-- Ảnh đại diện -->
+                
                 <div class="flex justify-center items-center mb-4 mt-10">
                     <img 
                         alt="Profile picture"
-                        class="profile-img rounded-full mb-0"
+                        class="mb-0"
+                        style="border-radius: 90px; border: solid rgb(255, 255, 255) 2px;"
                         src="assets/images/avt1.jpg"
-                        width="100"  
-                        height="100" 
+                        width="150"  
+                        height="150" 
                     />
                 </div>
 
                 <!-- Các biểu tượng xã hội -->
                 <div class="social-icons mt-4 py-2 flex space-x-4">
                     <a href="#">
-                        <i class="fab fa-twitter text-white text-2xl"> </i>
+                        <i class="fab fa-twitter text-white text-1xl"> </i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-facebook-f text-white text-2xl"> </i>
+                        <i class="fab fa-facebook-f text-white text-1xl"> </i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-linkedin-in text-white text-2xl"> </i>
+                        <i class="fab fa-linkedin-in text-white text-1xl"> </i>
                     </a>
                 </div>
             </div>
@@ -47,7 +48,7 @@
                     <b class="text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text">Nhut Duy</b>
                 </h1>
 
-                <p class="backdrop-blur-lg bg-white/1 text-left mt-6 text-lg pr-12 text-white font-thin max-w-8xl">
+                <p class=" bg-white/1 text-left mt-6 text-lg pr-12 text-white font-thin max-w-8xl">
                     I have graduated in Computer Networks and am on my way to becoming a
                     professional programmer. I not only want to build technological
                     products but also hope to contribute to creating real value for the
@@ -70,8 +71,8 @@
         <div class="flex justify-center items-center mt-20">
             <div style="width: 1000px;" class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg">
                 <a class="pt-1 text-white" href="#"> HOME </a>
-                <a class="pt-1 text-white" href="#"> PROJECTS </a>
                 <a class="pt-1 text-white" href="#"> SKILLS </a>
+                <a class="pt-1 text-white" href="#"> PROJECTS </a>
                 <a class="pt-1 text-white" href="#"> CONTACT </a>
                 <a class="pt-1 text-white" href="#"> BLOG </a>
             </div>
@@ -79,6 +80,35 @@
       </div>
       
     </div>
+
+
+    <!-- Skill -->
+    <div class="container mx-auto mt-10  flex flex-col justify-center items-center ">
+        <!-- font-bold -->
+        <h2 class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text">Technologies</h2>
+        <div class="flex justify-center space-x-6">
+            <!-- Python -->
+            <div class="skill-card border-2 p-6 rounded-lg shadow-lg flex justify-center items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon" class="h-12 w-12">
+            </div>
+            <!-- PHP -->
+            <div class="skill-card border-2 p-6 rounded-lg flex justify-center items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Icon" class="h-12 w-12">
+            </div>
+            <!-- MySQL -->
+            <div class="skill-card border-2 p-6 rounded-lg flex justify-center items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Icon" class="h-12 w-12">
+            </div>
+            <!-- Flask -->
+            <div class="skill-card border-2 p-6 rounded-lg flex justify-center items-enter">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask Icon" class="h-12 w-12">
+            </div>
+        </div>
+    </div>
+    
+    <!-- PROJECTS -->
+
+
     
 </body>
 </html>
