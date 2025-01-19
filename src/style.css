@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   background: linear-gradient(
@@ -15,11 +19,7 @@ body {
     #0f172a
     
   );
-
-  color: #e0e0e0;
-  text-align: center;
- 
-  
+color: white;
 }
 
 .profile-img {
@@ -44,6 +44,17 @@ body {
   color: #ffcc00;
 }
 
+@media (max-width: 768px) { /* Màn hình nhỏ hơn 768px (điện thoại và máy tính bảng) */
+  .gioithieu {
+    height: fit-content;
+  }
+ 
+}
+@media (max-width: 400px) { /* Màn hình nhỏ hơn 768px (điện thoại và máy tính bảng) */
+  .pgt{
+    font-size: 12px;
+  }
+}
 /* skills */
 .text-4xl{
   max-width: 300px;

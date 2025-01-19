@@ -11,62 +11,56 @@
 </head>
 
 <body>
-    <div class="menu flex justify-center items-center "
+    <div class="menu flex justify-center items-center text-center " 
         style="position: -webkit-sticky;position: sticky;top: 0;z-index: 100;">
         <div style="width: 1000px;" class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg">
             <a class="pt-1 text-white" href="#"> HOME </a>
-            <a class="pt-1 text-white" href="#"> SKILLS </a>
-            <a class="pt-1 text-white" href="#"> PROJECTS </a>
-            <a class="pt-1 text-white" href="#"> CONTACT </a>
-            <a class="pt-1 text-white" href="#"> BLOG </a>
+            <a class="pt-1 text-white" href="#skills"> SKILLS </a>
+            <a class="pt-1 text-white" href="#projects"> PROJECTS </a>
+            <a class="pt-1 text-white" href="#contact"> CONTACT </a>
+            <a class="pt-1 text-white" href="#blog"> BLOG </a>
         </div>
     </div>
 
     <!-- Đặt ảnh nền với lớp phủ mờ -->
-    <div class="relative bg-cover bg-center h-screen z-9" style="background-image: url('assets/images/bg.png');">
-        <div class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-12 gap-10">
+    <div class="gioithieu relative bg-cover bg-center h-screen z-9 " 
+        style="background-image: url('assets/images/bg.png');">
+        <div
+            class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
 
-            <div class="col-span-2 flex flex-col items-center justify-center">
-
-                <div class="flex justify-center items-center mb-4 mt-10">
-                    <img alt="Profile picture" class="mb-0"
-                        style="border-radius: 90px; border: solid rgb(255, 255, 255) 2px;" src="assets/images/avt1.jpg"
-                        width="150" height="150" />
+            <!-- Phần hình ảnh và biểu tượng xã hội -->
+            <div class="flex flex-col items-center justify-center md:mb-0 lg:col-span-2">
+                <div class="flex justify-center items-center mb-4">
+                    <img alt="Profile picture" class="mb-0 rounded-full border-2 border-white"
+                        src="assets/images/avt1.jpg" width="150" height="150" />
                 </div>
-
-                <!-- Các biểu tượng xã hội -->
                 <div class="social-icons mt-4 py-2 flex space-x-4">
-                    <a href="#">
-                        <i class="fab fa-twitter text-white text-1xl"> </i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f text-white text-1xl"> </i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-linkedin-in text-white text-1xl"> </i>
-                    </a>
+                    <a href="#"><i class="fab fa-twitter text-white text-xl"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f text-white text-xl"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in text-white text-xl"></i></a>
                 </div>
             </div>
 
-            <!-- Phần văn bản chiếm 8 phần -->
-            <div class="col-span-10 text-left">
-                <h1 class="gradient-text p-6 rounded-lg text-7xl font-thin text-white">
+            <!-- Phần giới thiệu -->
+            <div class=" lg:text-left lg:col-span-10 sm:m-0 px-2 pb-10">
+                <h1 class="h11 gradient-text px-6 rounded-lg text-6xl font-thin text-white" style="min-width: 400px; ">
                     Hi, I'm
                     <b class="text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text">Nhut
                         Duy</b>
                 </h1>
 
-                <p class=" bg-white/1  mt-6 text-lg pr-12 text-white font-thin max-w-8xl">
+                <p class="pgt mt-6 text-justify lg:text-lg lg:pr-12 md:pr-0 text-white font-thin max-w-6xl">
                     I have graduated in Computer Networks and am on my way to becoming a
                     professional programmer. I not only want to build technological
                     products but also hope to contribute to creating real value for the
                     community. Although my experience is limited at the moment, I believe
-                    that with continuous learning and a progressive mindset i will become
+                    that with continuous learning and a progressive mindset, I will become
                     a skilled programmer.
                 </p>
-                <p class=" mt-4 text-lg pr-12 text-white font-thin max-w-4xl">
+
+                <p class="pgt mt-4 text-justify lg:text-lg lg:pr-12 md:pr-0 text-white font-thin max-w-4xl">
                     I have basic experience with
-                    <b style="color: orange"> Python, PHP, and React</b> along with the
+                    <b style="color: orange"> Python, PHP</b> along with the
                     ability to develop websites using tools like
                     <b style="color: orange"> Flask and MySQL </b>. In addition to
                     programming, I am also interested in machine learning and image
@@ -75,17 +69,12 @@
                 </p>
             </div>
         </div>
-        <!-- <hr > -->
-
     </div>
-
-    </div>
-
-
 
 
     <!-- Skill -->
-    <div class="container mx-auto mt-10 mb-10 flex flex-col justify-center items-center ">
+     <div class="neo pb-5" id="skills" ></div>
+    <div class="container mx-auto mt-10 mb-10 flex flex-col justify-center items-center pt-3 " >
         <!-- font-bold -->
         <h2 class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text">
             Technologies</h2>
@@ -119,14 +108,16 @@
     </div>
 
     <!-- PROJECTS -->
-
+    <div class="neo pb-5"  id="projects" ></div>
     <div class="container-project mx-auto px-4 py-12 flex flex-col justify-center items-center"
         style="max-width:1000px;">
-        <h2 class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pb-10">
+        <h2
+            class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pb-10">
             Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
-            <div class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+            <div
+                class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
                 <img alt="Abstract colorful 3D shape" class="w-full h-46 " src="assets/images/Dbscl.png"
                     style="width:auto;" />
                 <div class="p-6 text-left">
@@ -158,7 +149,8 @@
                 </div>
             </div>
             <!-- Project 2 -->
-            <div class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+            <div
+                class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
                 <img alt="Abstract colorful 3D shape" class="w-full h-46 " src="assets/images/portfolio.png"
                     style="width:auto;" />
                 <div class="p-6 text-left">
@@ -168,11 +160,11 @@
                     <p class="text-gray-400 mb-4 text-sm">
                         A portfolio website is a personal website that showcases an individual’s work, skills, and
                         achievements.
-                        
+
                     </p>
                     <p class="text-gray-400 mb-4 text-sm">
                         Wait a seccond. Really, do you want to click me?
-                        
+
                     </p>
                     <p class=" font-bold mb-1 text-sm">
                         Tech Stack:
@@ -195,7 +187,8 @@
                 </div>
             </div>
             <!-- Project 3 -->
-            <div class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+            <div
+                class=" con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
                 <img alt="Abstract colorful 3D shape" class="w-full h-46 " src="assets/images/phanloai.jpg"
                     style="width:auto;" />
                 <div class="p-6 text-left">
