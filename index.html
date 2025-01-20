@@ -11,20 +11,23 @@
 </head>
 
 <body>
+  
   <div class="menu flex justify-center items-center text-center"
     style="position: -webkit-sticky; position: sticky; top: 0; z-index: 100">
     <div style="width: 1000px" class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg">
       <a class="menu-s pt-1 text-white" href="#"> Home </a>
       <a class="menu-s pt-1 text-white" href="#skills"> Skills </a>
-      <a class="menu-s pt-1 text-white" href="#projects"> Projects </a>
       <a class="menu-s pt-1 text-white" href="#experience"> Experience </a>
+      <a class="menu-s pt-1 text-white" href="#projects"> Projects </a>
       <a class="menu-s pt-1 text-white" href="#contact"> Contact </a>
     </div>
   </div>
+  <div class=" moc sm:mt-20 mt-0 "></div>
 
   <!-- Đặt ảnh nền với lớp phủ mờ -->
   <!-- style="background-image: url('assets/images/bg.png')" -->
-  <div class="gioithieu relative bg-cover bg-center h-screen z-9 " style="background-image: url('assets/images/bg.png');height: fit-content; " >
+  <div class="gioithieu relative bg-cover bg-center h-screen z-9 "
+    style="background-image: url('assets/images/bg.png');height: fit-content; ">
     <div
       class="relative z-20 container mx-auto pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-10">
       <!-- Phần hình ảnh và biểu tượng xã hội -->
@@ -50,7 +53,7 @@
             Duy</b>
         </h1>
 
-        <p class="pgt mt-6 text-justify lg:text-lg lg:pr-12 md:pr-0 text-sm text-gray-300 sm:ax-w-5xl lg:max-w-3xl">
+        <p class="pgt mt-6 text-justify lg:text-lg lg:pr-12 md:pr-0 text-sm text-gray-300 sm:ax-w-5xl lg:max-w-3xl ">
           I have graduated in Computer Networks and am on my way to becoming a
           professional programmer. I not only want to build technological
           products but also hope to contribute to creating real value for the
@@ -73,7 +76,7 @@
   </div>
 
   <!-- Skill -->
-  <div class="neo pb-0 md:pb-10" id="skills" ></div>
+  <div class="neo pb-0 md:pb-10" id="skills"></div>
   <div class="container mx-auto mb-5 mt-0 md:mt-10 flex flex-col justify-center items-center ">
     <!-- font-bold -->
     <h2
@@ -82,34 +85,75 @@
     </h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8 mb-20">
       <!-- Python -->
-      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon"
           class="h-16 w-16" />
+        <p class="pt-1 text-sm">Python</p>
       </div>
       <!-- PHP -->
-      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Icon"
           class="h-16 w-16" />
+          <p class="pt-1 text-sm">PHP</p>
       </div>
       <!-- MySQL -->
-      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Icon"
           class="h-16 w-16" />
+          <p class="pt-1 text-sm">MySQL</p>
       </div>
       <!-- Flask -->
-      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask Icon"
           class="h-16 w-16" />
+          <p class="pt-1 text-sm">Flask</p>
       </div>
       <!-- React -->
-      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="h-16 w-16" />
+        <p class="pt-1 text-sm">React</p>
       </div>
 
 
     </div>
 
   </div>
+  <!-- Experience  -->
+  <div class="neo pb-5" id="experience"></div>
+  <div class="container-exp mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
+    <h1
+      class="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text mb-10">
+      Experience
+    </h1>
+    <div class="space-y-12">
+      <!-- Experience 1-->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <!-- Cột năm -->
+        <p class="hadnumber text-xl md:col-span-3 text-left">05/2024 - 07/2024</p>
+        <!-- Cột nội dung -->
+        <div class="md:col-span-9">
+          <h2 class="text-xl font-semibold text-white md:text-2xl">
+            Intern Front-end Developer -
+            <span class="text-indigo-400">GHS (Global Hospitality Solutions)</span>
+          </h2>
+          <p class="mt-4 text-gray-300 text-sm text-justify">
+            Participated in editing the website interface, learning web security techniques (email
+            encryption). Contributed to improving website performance and enhancing teamwork skills, using Git, as well
+            as practical problem-solving thinking.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-2 py-1 text-gray-300 rounded-full text-sm"
+              style="border: 2px solid rgb(0, 119, 130)">JavaScript
+            </span>
+            <span class="px-2 py-1 text-gray-300 rounded-full text-sm" style="border: 2px solid rgb(0, 119, 130)">React
+
+          </div>
+        </div>
+      </div>
+      <!-- End Experience 1 -->
+    </div>
+  </div>
+  <!-- End Experience  -->
 
   <!-- PROJECTS -->
   <div class="neo pb-5" id="projects"></div>
@@ -215,42 +259,6 @@
 
   <!-- End PROJECTS -->
 
-  <!-- Experience  -->
-  <div class="neo pb-5" id="experience"></div>
-  <div class="container-exp mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
-    <h1
-      class="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text mb-10">
-      Experience
-    </h1>
-    <div class="space-y-12">
-      <!-- Experience 1-->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <!-- Cột năm -->
-        <p class="hadnumber text-xl md:col-span-3 text-left">05/2024 - 07/2024</p>
-        <!-- Cột nội dung -->
-        <div class="md:col-span-9">
-          <h2 class="text-xl font-semibold text-white md:text-2xl">
-            Intern Front-end Developer -
-            <span class="text-indigo-400">GHS (Global Hospitality Solutions)</span>
-          </h2>
-          <p class="mt-4 text-gray-300 text-sm text-justify">
-            Participated in editing the website interface, learning web security techniques (email
-            encryption). Contributed to improving website performance and enhancing teamwork skills, using Git, as well
-            as practical problem-solving thinking.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-6">
-            <span class="px-2 py-1 text-gray-300 rounded-full text-sm"
-              style="border: 2px solid rgb(0, 119, 130)">JavaScript
-            </span>
-            <span class="px-2 py-1 text-gray-300 rounded-full text-sm" style="border: 2px solid rgb(0, 119, 130)">React
-
-          </div>
-        </div>
-      </div>
-      <!-- End Experience 1 -->
-    </div>
-  </div>
-  <!-- End Experience  -->
 
   <!-- Education -->
   <div class="container-edu mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
@@ -272,7 +280,8 @@
 
   <!-- End Education -->
   <!-- Certificates -->
-  <div class="container-cer mx-auto px-4 py-12 flex flex-col justify-center items-center gap-1" style="max-width: 1000px">
+  <div class="container-cer mx-auto px-4 py-12 flex flex-col justify-center items-center gap-1"
+    style="max-width: 1000px">
     <h1 class="text-4xl font-bold text-transparent bg-clip-text mb-10" style="color: #A0D6E3;">
       Certificates</h1>
     <!-- 1 -->
