@@ -1,380 +1,267 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dist/style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+
+<body>
+  <div class="menu flex justify-center items-center text-center"
+    style="position: -webkit-sticky; position: sticky; top: 0; z-index: 100">
+    <div style="width: 1000px" class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg">
+      <a class="menu-s pt-1 text-white" href="#"> Home </a>
+      <a class="menu-s pt-1 text-white" href="#skills"> Skills </a>
+      <a class="menu-s pt-1 text-white" href="#projects"> Projects </a>
+      <a class="menu-s pt-1 text-white" href="#experience"> Experience </a>
+      <a class="menu-s pt-1 text-white" href="#contact"> Contact </a>
+    </div>
+  </div>
+
+  <!-- Đặt ảnh nền với lớp phủ mờ -->
+  <div class="gioithieu relative bg-cover bg-center h-screen z-9" style="background-image: url('assets/images/bg.png')">
     <div
-      class="menu flex justify-center items-center text-center"
-      style="position: -webkit-sticky; position: sticky; top: 0; z-index: 100"
-    >
-      <div
-        style="width: 1000px"
-        class="nav-links backdrop-blur-lg py-6 bg-white/10 shadow-lg px-20 rounded-lg"
-      >
-        <a class="menu-s pt-1 text-white" href="#"> HOME </a>
-        <a class="menu-s pt-1 text-white" href="#skills"> SKILLS </a>
-        <a class="menu-s pt-1 text-white" href="#projects"> PROJECTS </a>
-        <a class="menu-s pt-1 text-white" href="#experience"> EXPERIENCE </a>
-        <a class="menu-s pt-1 text-white" href="#contact"> CONTACT </a>
+      class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-10">
+      <!-- Phần hình ảnh và biểu tượng xã hội -->
+      <div class="flex flex-col items-center justify-center md:mb-0 lg:col-span-2 md:col-span-1">
+        <div class="flex justify-center items-center mb-4">
+          <img alt="Profile picture" class="mb-0 rounded-full border-2 border-white" src="assets/images/avt1.jpg"
+            width="150" height="150" />
+        </div>
+        <div class="social-icons mt-4 py-2 flex space-x-4">
+          <a href="#"><i class="fab fa-twitter text-white text-xl"></i></a>
+          <a href="#"><i class="fab fa-facebook-f text-white text-xl"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in text-white text-xl"></i></a>
+        </div>
+      </div>
+
+      <!-- Phần giới thiệu -->
+      <div class="lg:text-left lg:col-span-10 md:col-span-2 px-2 pb-10">
+        <h1 class="gradient-text rounded-lg lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-thin text-white"
+          style="min-width: 370px">
+          Hi, I'm
+          <b class="text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text">Nhut
+            Duy</b>
+        </h1>
+
+        <p class="pgt mt-6 text-justify lg:text-lg lg:pr-12 md:pr-0 text-gray-400 max-w-6xl">
+          I have graduated in Computer Networks and am on my way to becoming a
+          professional programmer. I not only want to build technological
+          products but also hope to contribute to creating real value for the
+          community. Although my experience is limited at the moment, I
+          believe that with continuous learning and a progressive mindset, I
+          will become a skilled programmer.
+        </p>
+
+        <p class="pgt mt-4 text-justify lg:text-lg lg:pr-12 md:pr-0 text-gray-400 max-w-4xl">
+          I have basic experience with
+          <b style="color: orange"> Python, PHP</b> along with the ability to
+          develop websites using tools like
+          <b style="color: orange"> Flask and MySQL </b>. In addition to
+          programming, I am also interested in machine learning and image
+          processing. With a progressive mindset, I am always ready to
+          overcome challenges to achieve my goals.
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- Đặt ảnh nền với lớp phủ mờ -->
-    <div
-      class="gioithieu relative bg-cover bg-center h-screen z-9"
-      style="background-image: url('assets/images/bg.png')"
-    >
-      <div
-        class="relative z-20 container mx-auto pt-20 pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-10"
-      >
-        <!-- Phần hình ảnh và biểu tượng xã hội -->
-        <div
-          class="flex flex-col items-center justify-center md:mb-0 lg:col-span-2 md:col-span-1"
-        >
-          <div class="flex justify-center items-center mb-4">
-            <img
-              alt="Profile picture"
-              class="mb-0 rounded-full border-2 border-white"
-              src="assets/images/avt1.jpg"
-              width="150"
-              height="150"
-            />
-          </div>
-          <div class="social-icons mt-4 py-2 flex space-x-4">
-            <a href="#"><i class="fab fa-twitter text-white text-xl"></i></a>
-            <a href="#"><i class="fab fa-facebook-f text-white text-xl"></i></a>
-            <a href="#"
-              ><i class="fab fa-linkedin-in text-white text-xl"></i
-            ></a>
-          </div>
-        </div>
+  <!-- Skill -->
+  <div class="neo pb-5" id="skills"></div>
+  <div class="container mx-auto mt-10 mb-10 flex flex-col justify-center items-center pt-3">
+    <!-- font-bold -->
+    <h2
+      class="h2-skills text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text">
+      Technologies
+    </h2>
+    <div class="flex justify-center space-x-6 mt-8 mb-20">
+      <!-- Python -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon"
+          class="h-16 w-16" />
+      </div>
+      <!-- PHP -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Icon"
+          class="h-16 w-16" />
+      </div>
+      <!-- MySQL -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Icon"
+          class="h-16 w-16" />
+      </div>
+      <!-- Flask -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask Icon"
+          class="h-16 w-16" />
+      </div>
+      <!-- React -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="h-16 w-16" />
+      </div>
+    </div>
+  </div>
 
-        <!-- Phần giới thiệu -->
-        <div class="lg:text-left lg:col-span-10 md:col-span-2 px-2 pb-10">
-          <h1
-            class="gradient-text rounded-lg lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-thin text-white"
-            style="min-width: 370px"
-          >
-            Hi, I'm
-            <b
-              class="text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text"
-              >Nhut Duy</b
-            >
-          </h1>
-
-          <p
-            class="pgt mt-6 text-justify lg:text-lg lg:pr-12 md:pr-0 text-gray-400 max-w-6xl"
-          >
-            I have graduated in Computer Networks and am on my way to becoming a
-            professional programmer. I not only want to build technological
-            products but also hope to contribute to creating real value for the
-            community. Although my experience is limited at the moment, I
-            believe that with continuous learning and a progressive mindset, I
-            will become a skilled programmer.
+  <!-- PROJECTS -->
+  <div class="neo pb-5" id="projects"></div>
+  <div class="container-project mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
+    <h2 class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pb-10">
+      Projects
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+        <img alt="Abstract colorful 3D shape" class="w-full h-46" src="assets/images/Dbscl.png" style="width: auto" />
+        <div class="p-6 text-left">
+          <h2 class="text-xl font-bold mb-2">SCL-Travel (Blog Website)</h2>
+          <p class="text-gray-400 mb-4 text-sm">
+            The website is built using PHP and a MySQL database, featuring
+            functionalities for viewing articles about tourist destinations,
+            filtering, searching, and posting articles.
           </p>
-
-          <p
-            class="pgt mt-4 text-justify lg:text-lg lg:pr-12 md:pr-0 text-gray-400 max-w-4xl"
-          >
-            I have basic experience with
-            <b style="color: orange"> Python, PHP</b> along with the ability to
-            develop websites using tools like
-            <b style="color: orange"> Flask and MySQL </b>. In addition to
-            programming, I am also interested in machine learning and image
-            processing. With a progressive mindset, I am always ready to
-            overcome challenges to achieve my goals.
+          <p class="font-bold mb-1 text-sm">Tech Stack:</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              PHP
+            </span>
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Mysql
+            </span>
+          </div>
+          <div class="flex text-sm mt-2">
+            <p class="font-bold mt-1">
+              Github :
+              <a href="https://github.com/DuyIt7033/scl-travel" class="text-blue-500 underline">SCL-Travel</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+        <img alt="Abstract colorful 3D shape" class="w-full h-46" src="assets/images/portfolio.png"
+          style="width: auto" />
+        <div class="p-6 text-left">
+          <h2 class="text-xl font-bold mb-2">My Portfolio (Blog Website)</h2>
+          <p class="text-gray-400 mb-4 text-sm">
+            A portfolio website is a personal website that showcases an
+            individual’s work, skills, and achievements.
           </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill -->
-    <div class="neo pb-5" id="skills"></div>
-    <div
-      class="container mx-auto mt-10 mb-10 flex flex-col justify-center items-center pt-3"
-    >
-      <!-- font-bold -->
-      <h2
-        class="h2-skills text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text"
-      >
-        Technologies
-      </h2>
-      <div class="flex justify-center space-x-6 mt-8 mb-20">
-        <!-- Python -->
-        <div
-          class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-            alt="Python Icon"
-            class="h-16 w-16"
-          />
-        </div>
-        <!-- PHP -->
-        <div
-          class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            alt="PHP Icon"
-            class="h-16 w-16"
-          />
-        </div>
-        <!-- MySQL -->
-        <div
-          class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-            alt="MySQL Icon"
-            class="h-16 w-16"
-          />
-        </div>
-        <!-- Flask -->
-        <div
-          class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-            alt="Flask Icon"
-            class="h-16 w-16"
-          />
-        </div>
-        <!-- React -->
-        <div
-          class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-            alt="React"
-            class="h-16 w-16"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECTS -->
-    <div class="neo pb-5" id="projects"></div>
-    <div
-      class="container-project mx-auto px-4 py-12 flex flex-col justify-center items-center"
-      style="max-width: 1000px"
-    >
-      <h2
-        class="text-4xl font-bold mb-8 text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pb-10"
-      >
-        Projects
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div
-          class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50"
-        >
-          <img
-            alt="Abstract colorful 3D shape"
-            class="w-full h-46"
-            src="assets/images/Dbscl.png"
-            style="width: auto"
-          />
-          <div class="p-6 text-left">
-            <h2 class="text-xl font-bold mb-2">SCL-Travel (Blog Website)</h2>
-            <p class="text-gray-400 mb-4 text-sm">
-              The website is built using PHP and a MySQL database, featuring
-              functionalities for viewing articles about tourist destinations,
-              filtering, searching, and posting articles.
+          <p class="text-gray-400 mb-4 text-sm">
+            Wait a seccond. Seriously?
+            You're actually thinking about clicking on me?
+          </p>
+          <p class="font-bold mb-1 text-sm">Tech Stack:</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Javasrcipts
+            </span>
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Tailwind css
+            </span>
+          </div>
+          <div class="flex text-sm mt-2">
+            <p class="font-bold mt-1">
+              Github :
+              <a href="https://github.com/DuyIt7033/poforlio" class="text-blue-500 underline">Portfolio</a>
             </p>
-            <p class="font-bold mb-1 text-sm">Tech Stack:</p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                PHP
-              </span>
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Mysql
-              </span>
-            </div>
-            <div class="flex text-sm mt-2">
-              <p class="font-bold mt-1">
-                Github :
-                <a
-                  href="https://github.com/DuyIt7033/scl-travel"
-                  class="text-blue-500 underline"
-                  >SCL-Travel</a
-                >
-              </p>
-            </div>
           </div>
         </div>
-        <!-- Project 2 -->
-        <div
-          class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50"
-        >
-          <img
-            alt="Abstract colorful 3D shape"
-            class="w-full h-46"
-            src="assets/images/portfolio.png"
-            style="width: auto"
-          />
-          <div class="p-6 text-left">
-            <h2 class="text-xl font-bold mb-2">My Portfolio (Blog Website)</h2>
-            <p class="text-gray-400 mb-4 text-sm">
-              A portfolio website is a personal website that showcases an
-              individual’s work, skills, and achievements.
-            </p>
-            <p class="text-gray-400 mb-4 text-sm">
-              Wait a seccond. Really, do you want to click me?
-            </p>
-            <p class="font-bold mb-1 text-sm">Tech Stack:</p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Javasrcipts
-              </span>
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Tailwind css
-              </span>
-            </div>
-            <div class="flex text-sm mt-2">
-              <p class="font-bold mt-1">
-                Github :
-                <a
-                  href="https://github.com/DuyIt7033/poforlio"
-                  class="text-blue-500 underline"
-                  >Portfolio</a
-                >
-              </p>
-            </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+        <img alt="Abstract colorful 3D shape" class="w-full h-46" src="assets/images/phanloai.jpg"
+          style="width: auto" />
+        <div class="p-6 text-left">
+          <h2 class="text-xl font-bold mb-2">
+            Specifically X-ray images (Web Application)
+          </h2>
+          <p class="text-gray-400 mb-4 text-sm">
+            The website allows users to upload chest X-ray images and provides
+            disease predictions using three pre-trained machine learning
+            models. The focus is more on deep
+            learning and machine learning rather than web development.
+          </p>
+          <p class="font-bold mb-1 text-sm">Tech Stack:</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Python
+            </span>
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Tensorflow
+            </span>
+            <span class="bg-gray-700 text-gray-300 px-3 rounded" style="border-radius: 15px">
+              Flask
+            </span>
           </div>
-        </div>
-        <!-- Project 3 -->
-        <div
-          class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50"
-        >
-          <img
-            alt="Abstract colorful 3D shape"
-            class="w-full h-46"
-            src="assets/images/phanloai.jpg"
-            style="width: auto"
-          />
-          <div class="p-6 text-left">
-            <h2 class="text-xl font-bold mb-2">
-              Specifically X-ray images (Web Application)
-            </h2>
-            <p class="text-gray-400 mb-4 text-sm">
-              The website allows users to upload chest X-ray images and provides
-              disease predictions using three pre-trained machine learning
-              models: ResNet-50, VGG19, and DenseNet. The focus is more on deep
-              learning and machine learning rather than web development.
+          <div class="flex text-sm mt-2">
+            <p class="font-bold mt-1">
+              Github :
+              <a href="https://github.com/DuyIt7033/scl-travel" class="text-blue-500 underline">Click here</a>
             </p>
-            <p class="font-bold mb-1 text-sm">Tech Stack:</p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Python
-              </span>
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Tensorflow
-              </span>
-              <span
-                class="bg-gray-700 text-gray-300 px-3 rounded"
-                style="border-radius: 15px"
-              >
-                Flask
-              </span>
-            </div>
-            <div class="flex text-sm mt-2">
-              <p class="font-bold mt-1">
-                Github :
-                <a
-                  href="https://github.com/DuyIt7033/scl-travel"
-                  class="text-blue-500 underline"
-                  >Click here</a
-                >
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- End PROJECTS -->
+  <!-- End PROJECTS -->
 
-    <!-- Experience  -->
-    <div class="neo pb-5" id="experience"></div>
-    <div
-      class="container-exp mx-auto px-4 py-12 flex flex-col justify-center items-center"
-      style="max-width: 1000px"
-    >
-      <h1
-        class="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text mb-10"
-      >
-        Experience
-      </h1>
-      <div class="space-y-12">
-        <!-- Google Experience -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-          <!-- Cột năm -->
-          <p class="text-xl md:col-span-3 text-left">2023 - Present</p>
-          <!-- Cột nội dung -->
-          <div class="md:col-span-9">
-            <h2 class="text-xl font-semibold text-white md:text-2xl">
-              Senior Full Stack Developer -
-              <span class="text-indigo-400">Google Inc.</span>
-            </h2>
-            <p class="mt-4 text-gray-300 text-sm text-justify">
-              Led a team in developing and maintaining web applications using
-              JavaScript, React.js, and Node.js. Implemented RESTful APIs and
-              integrated with MongoDB databases. Collaborated with stakeholders
-              to define project requirements and timelines.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-6">
-              <span
-                class="px-2 py-1 text-gray-300 rounded-full text-sm"
-                style="border: 2px solid rgb(0, 119, 130)"
-                >JavaScript
-              </span>
-              <span
-                class="px-2 py-1 text-gray-300 rounded-full text-sm"
-                style="border: 2px solid rgb(0, 119, 130)"
-                >React
-              </span>
-              <span
-                class="px-2 py-1 text-gray-300 rounded-full text-sm"
-                style="border: 2px solid rgb(0, 119, 130)"
-                >Java
-              </span>
-            </div>
+  <!-- Experience  -->
+  <div class="neo pb-5" id="experience"></div>
+  <div class="container-exp mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
+    <h1
+      class="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text mb-10">
+      Experience
+    </h1>
+    <div class="space-y-12">
+      <!-- Experience 1-->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <!-- Cột năm -->
+        <p class="hadnumber text-xl md:col-span-3 text-left" >05/2024 - 07/2024</p>
+        <!-- Cột nội dung -->
+        <div class="md:col-span-9">
+          <h2 class="text-xl font-semibold text-white md:text-2xl">
+            Intern Front-end Developer -
+            <span class="text-indigo-400">GHS (Global Hospitality Solutions)</span>
+          </h2>
+          <p class="mt-4 text-gray-300 text-sm text-justify">
+            Participated in editing the website interface, learning web security techniques (email
+            encryption). Contributed to improving website performance and enhancing teamwork skills, using Git, as well
+            as practical problem-solving thinking.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-2 py-1 text-gray-300 rounded-full text-sm"
+              style="border: 2px solid rgb(0, 119, 130)">JavaScript
+            </span>
+            <span class="px-2 py-1 text-gray-300 rounded-full text-sm" style="border: 2px solid rgb(0, 119, 130)">React
+            
           </div>
         </div>
-        <!-- Adobe Experience -->
       </div>
+      <!-- End Experience 1 -->
     </div>
-  </body>
+  </div>
+  <!-- End Experience  -->
+
+  <div class="container-edu mx-auto px-4 py-12 flex flex-col justify-center items-center" style="max-width: 1000px">
+    <h1
+      class="text-4xl font-bold text-center text-transparent bg-clip-text mb-10" style="color: #A0D6E3;">
+      Education</h1>
+    <div class=" p-6 rounded-lg mb-6 shadow-lg"
+      style="border: 1px solid ; background-color: none; border-radius: 15px;">
+      <!-- bg-gradient-to-r from-purple-500 to-indigo-500  -->
+      <h2 class="text-xl font-semibold text-indigo-400">Bachelor's Degree in Computer Networks and Data Communication</h2>
+      <p class="text-xl">Can Tho University</p>
+      <p class="text-sm hadnumber text-cyan-500 font-bold">2020 - 2024</p>
+      <p class="mt-4 text-sm text-gray-400">Specialized in designing, implementing, and managing network systems,
+        information security, and
+        data communication. Completed a capstone project on a web-based system for lung disease detection from X-ray
+        images using Convolutional Neural Networks (CNN) in combination with Deep Learning.</p>
+    </div>
+</body>
+
 </html>

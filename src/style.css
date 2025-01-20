@@ -22,6 +22,11 @@ body {
 color: white;
 justify-content: center;
 }
+/* Các con số sẽ dùng sans-serif */
+.hadnumber {
+  font-family: sans-serif;
+}
+
 .menu-s{
   padding: 2px 10px;
   border-radius: 15px;
