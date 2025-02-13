@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+    60deg,
+    #00091d,
+    #0f172a,
+    #0f172a,
+    #1d294f,
+    #3a576d,
+    #26154a,
+    #0f172a
+    
+  );
+color: rgb(255, 255, 255);
+justify-content: center;
+}
+/* Các con số sẽ dùng sans-serif */
+.hadnumber {
+  font-family: sans-serif;
+}

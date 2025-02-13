@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="dist/style.css" />
 </head>
 
+
+
 <body>
 
   <div class="menu flex justify-center items-center text-center"
@@ -35,12 +37,26 @@
           <img alt="Profile picture" class="mb-0 rounded-full border-2 border-white" src="assets/images/avt1.jpg"
             width="150" height="150" />
         </div>
-        <div class="down-cv mt-4 py-2 flex space-x-4">
-          <a href="assets/files/PTND-Cv.pdf"
-            class=" text-white px-4 py-2 rounded-md hover:bg-white hover:text-cyan-500 transition-all text-sm"
-            style="border-radius: 25px; border: #ffffff 2px solid;" download="PTND-Cv.pdf">
-            Download CV
-          </a>
+        <div class="down-cv mt-4 py-2 flex space-x-4 relative">
+          <!-- Nút chính -->
+          <button id="dropdownButton" class="text-white px-4 py-2 rounded-md hover:bg-white hover:text-cyan-500 transition-all text-sm"
+                  style="border-radius: 25px; border: #ffffff 2px solid;">
+            Download CV ▼
+          </button>
+        
+          <!-- Dropdown menu -->
+          <div id="dropdownMenu" class="absolute hidden bg-white shadow-md mt-2 rounded-md w-40 z-10">
+            <a href="assets/files/[Vie] Intern_backend_Python_PhamTranNhutDuy.pdf" 
+               class="block px-4 py-2 text-gray-800 hover:bg-cyan-500 hover:text-white" 
+               download="PTND-Cv-Vi.pdf">
+              Vietnamese Cv
+            </a>
+            <a href="assets/files/[Eng] Intern_backend_Python_PhamTranNhutDuy.pdf" 
+               class="block px-4 py-2 text-gray-800 hover:bg-cyan-500 hover:text-white" 
+               download="PTND-Cv-En.pdf">
+              English Cv
+            </a>
+          </div>
         </div>
       </div>
 
@@ -66,7 +82,7 @@
           I have basic experience with
           <b style="color: orange"> Python, PHP</b> along with the ability to
           develop websites using tools like
-          <b style="color: orange"> Flask and MySQL </b>. In addition to
+          <b style="color: orange"> Flask, Django and MySQL </b>. In addition to
           programming, I am also interested in machine learning and image
           processing. With a progressive mindset, I am always ready to
           overcome challenges to achieve my goals.
@@ -105,6 +121,11 @@
           class="h-16 w-16" />
         <p class="pt-1 text-sm">MySQL</p>
       </div>
+      <!-- django  -->
+      <div class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
+        <img src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" alt="Django" class="h-16 w-16" />
+        <p class="pt-1 text-sm">Django</p>
+    </div>
       <!-- Flask -->
       <div
         class="skill-card lg:p-6 md:p-6 sm:p-0 rounded-lg shadow-lg flex justify-center items-center drop-shadow-xl flex-col hover:text-cyan-500">
@@ -118,8 +139,6 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="h-16 w-16" />
         <p class="pt-1 text-sm">React</p>
       </div>
-
-
     </div>
 
   </div>
@@ -138,19 +157,22 @@
         <!-- Cột nội dung -->
         <div class="md:col-span-9">
           <h2 class="text-xl font-semibold text-white md:text-2xl">
-            Intern Front-end Developer -
+            Intern Web Developer -
             <span class="text-indigo-400">GHS (Global Hospitality Solutions)</span>
           </h2>
           <p class="mt-4 text-gray-300 text-sm text-justify">
-            Participated in editing the website interface, learning web security techniques (email
-            encryption). Contributed to improving website performance and enhancing teamwork skills, using Git, as well
-            as practical problem-solving thinking.
+            - <strong>Implemented security measures</strong>: Prevented SQL Injection by validating and filtering user input, ensuring safe database queries. <br>
+            - <strong>Optimized page load speed</strong>: Compressed images into WebP format for faster performance. <br>
+            - <strong>Strengthened API knowledge</strong>: Learned how to design and develop efficient APIs. <br>
+            - <strong>Refined web development skills</strong>: Edited website interfaces while gaining insights into web security, including email encryption. <br>
+            - <strong>Enhanced performance and collaboration</strong>: Contributed to website optimization, improved teamwork skills using Git, and developed practical problem-solving abilities.
           </p>
+          
           <div class="flex flex-wrap gap-2 mt-6">
-            <span class="px-2 py-1 text-gray-300 rounded-full text-sm"
+            <!-- <span class="px-2 py-1 text-gray-300 rounded-full text-sm"
               style="border: 2px solid rgb(0, 119, 130)">JavaScript
             </span>
-            <span class="px-2 py-1 text-gray-300 rounded-full text-sm" style="border: 2px solid rgb(0, 119, 130)">React
+            <span class="px-2 py-1 text-gray-300 rounded-full text-sm" style="border: 2px solid rgb(0, 119, 130)">React -->
 
           </div>
         </div>
@@ -228,7 +250,7 @@
         </div>
       </div>
       <!-- Project 3 -->
-      <div class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50">
+      <div class="con-p rounded-lg overflow-hidden shadow-lg drop-shadow-xl text-justify hover:shadow-cyan-500/50" onclick="goToProject(event, 'projects/alcare.html')">
         <img alt="Abstract colorful 3D shape" class="w-full h-46" src="assets/images/phanloai.jpg"
           style="width: auto" />
         <div class="p-6 text-left">
@@ -355,3 +377,26 @@
 </body>
 
 </html>
+
+<script>
+  function goToProject(event, url) {
+    // Kiểm tra nếu phần tử được click là thẻ <a> thì không làm gì cả
+    if (event.target.tagName.toLowerCase() !== 'a') {
+      window.location.href = url;
+    }
+  }
+
+  document.getElementById("dropdownButton").addEventListener("click", function () {
+    document.getElementById("dropdownMenu").classList.toggle("hidden");
+    
+  });
+
+  // Đóng dropdown nếu click ra ngoài
+  document.addEventListener("click", function (event) {
+    const dropdown = document.getElementById("dropdownMenu");
+    const button = document.getElementById("dropdownButton");
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.classList.add("hidden");
+    }
+  });
+</script>

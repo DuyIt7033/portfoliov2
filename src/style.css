@@ -32,14 +32,9 @@ justify-content: center;
   border-radius: 15px;
 }
 .menu-s:hover{
-    color: rgb(16, 14, 16);
+    color: cyan;
     font-weight: 900;
-    background: linear-gradient(
-      135deg,
-      rgb( 11, 108, 128),
-      cyan
-    );
-    
+    background: white;
     transition: 0.7s;
 }
 .profile-img {

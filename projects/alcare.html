@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- File CSS riêng -->
+    <title>Chi tiết Dự án</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/alcare.css" />
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Container chính -->
+    <div class="container mx-auto p-6">
+
+        <!-- Tên project -->
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6 ">
+            <h1 class="text-3xl font-bold ">AIraCare</h1>
+
+
+            <ul class="list-disc pl-5 mt-3">
+                <li><strong>Framework:</strong> Flask </li>
+                <li><strong>Ngôn ngữ Code:</strong> Python </li>
+                <li><strong>Công nghệ Sử dụng:</strong> TensorFlow 2.10, Keras</li>
+
+            </ul>
+        </div>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold text-white mb-4">Chi tiết về dự án</h2>
+
+            <!-- Container: Mục tiêu dự án -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">Mục tiêu</h3>
+                <p class="text-gray-300">
+                    Xây dựng và triển ứng dụng với mô hình học sâu có khả năng phân tích và xử lý ảnh X-quang phổi nhằm
+                    trích xuất và nhận dạng các đặc trưng quan trọng từ ảnh. Từ những đặc trưng này, mô hình sẽ đưa ra
+                    các kết quả phân loại một cách chính xác, hỗ trợ trong việc đánh giá tình trạng phổi qua ảnh
+                    X-quang.
+                </p>
+            </div>
+
+
+            <!-- Container: Các bước thực hiện -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">📌 Các bước thực hiện</h3>
+                <ol class="list-decimal list-inside text-gray-300">
+                    <li>Cài đặt môi trường (Python, TensorFlow, CUDA)</li>
+                    <li>Xử lý dữ liệu ảnh X-quang</li>
+                    <li>Huấn luyện mô hình ResNet-50, VGG-19, DenseNet</li>
+                    <li>Đánh giá kết quả bằng Accuracy, Precision, Recall</li>
+                    <li>Triển khai mô hình với Flask Framework</li>
+                </ol>
+            </div>
+
+            <!-- Sơ đồ hoạt động Flask xử lý ảnh X-quang -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2"> Sơ đồ hoạt động</h3>
+                <div class="flex justify-center p-2">
+                    <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Bước 1: Người dùng tải ảnh lên -->
+                        <rect x="200" y="20" width="200" height="50" fill="#4CAF50" stroke="#000" stroke-width="2" />
+                        <text x="230" y="50" fill="white" font-size="14">Người dùng tải ảnh</text>
+
+                        <!-- Mũi tên xuống -->
+                        <line x1="300" y1="70" x2="300" y2="100" stroke="#000" stroke-width="2" />
+
+                        <!-- Bước 2: Kiểm tra định dạng ảnh -->
+                        <rect x="200" y="100" width="200" height="50" fill="#2196F3" stroke="#000" stroke-width="2" />
+                        <text x="210" y="130" fill="white" font-size="14">Kiểm tra định dạng ảnh</text>
+
+                        <!-- Mũi tên xuống -->
+                        <line x1="300" y1="150" x2="300" y2="180" stroke="#000" stroke-width="2" />
+
+                        <!-- Bước 3: Kiểm tra ảnh có phải X-quang -->
+                        <rect x="200" y="180" width="200" height="50" fill="#FF9800" stroke="#000" stroke-width="2" />
+                        <text x="210" y="210" fill="white" font-size="14">Kiểm tra ảnh X-quang</text>
+
+                        <!-- Mũi tên xuống -->
+                        <line x1="300" y1="230" x2="300" y2="260" stroke="#000" stroke-width="2" />
+
+                        <!-- Bước 4: Tiền xử lý ảnh -->
+                        <rect x="200" y="260" width="200" height="50" fill="#9C27B0" stroke="#000" stroke-width="2" />
+                        <text x="220" y="290" fill="white" font-size="14">Tiền xử lý ảnh</text>
+
+                        <!-- Mũi tên xuống -->
+                        <line x1="300" y1="310" x2="300" y2="340" stroke="#000" stroke-width="2" />
+
+                        <!-- Bước 5: Dự đoán bằng mô hình ML -->
+                        <rect x="200" y="340" width="200" height="50" fill="#F44336" stroke="#000" stroke-width="2" />
+                        <text x="210" y="370" fill="white" font-size="14">Dự đoán bằng ML</text>
+
+                        <!-- Mũi tên xuống -->
+                        <line x1="300" y1="390" x2="300" y2="420" stroke="#000" stroke-width="2" />
+
+                        <!-- Bước 6: Hiển thị kết quả -->
+                        <rect x="200" y="420" width="200" height="50" fill="#FFEB3B" stroke="#000" stroke-width="2" />
+                        <text x="230" y="450" fill="black" font-size="14">Hiển thị kết quả</text>
+                    </svg>
+                </div>
+            </div>
+
+
+            <!-- Container: Cấu hình Flask -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2"> Cấu hình Flask</h3>
+                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+import os
+from flask import Flask, render_template, send_from_directory, flash, redirect, url_for, request
+    </code></pre>
+                <p class="mt-2 text-gray-300">Khởi tạo ứng dụng Flask, cấu hình thư mục tải lên và khóa bí mật.</p>
+            </div>
+
+            <!-- Container: Xử lý tải lên ảnh -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">Xử lý tải lên ảnh</h3>
+                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+def handle_image_upload(image):
+    if not image or image.filename == '':
+        flash('Chưa chọn ảnh !', 'error')
+        return False
+    if not allowed_file(image.filename):
+        flash('Chỉ nhận được file jpg, png, jpeg', 'error')
+        return False
+    return True
+    </code></pre>
+                <p class="mt-2 text-gray-300">Hàm kiểm tra tính hợp lệ của ảnh được tải lên.</p>
+            </div>
+
+            <!-- Container: Kiểm tra ảnh X-quang -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">Kiểm tra ảnh X-quang</h3>
+                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+def is_xray_image(image_path):
+    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    contrast = img.max() - img.min()
+    if contrast < 150:
+        return False
+    height, width = img.shape
+    aspect_ratio = width / height
+    if aspect_ratio < 0.8 or aspect_ratio > 1.2:
+        return False
+    edges = cv2.Canny(img, 50, 150)
+    edge_density = np.sum(edges) / (height * width)
+    if edge_density < 3 or edge_density > 50:
+        return False
+    return True
+    </code></pre>
+                <p class="mt-2 text-gray-300">Hàm kiểm tra đặc điểm của ảnh để xác định xem có phải ảnh X-quang không.
+                </p>
+            </div>
+
+            <!-- Container: Xử lý tải lên tệp ZIP -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2"> Xử lý tải lên tệp ZIP</h3>
+                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+def upload_zip():
+    zip_file = request.files.get("zip_file")
+    if not zip_file or zip_file.filename == '':
+        flash("Chưa chọn tệp !", "error")
+        return redirect(url_for('upload_zip'))
+    </code></pre>
+                <p class="mt-2 text-gray-300">Xử lý tải lên tệp ZIP và trích xuất nội dung để dự đoán.</p>
+            </div>
+
+            <!-- Container: Dự đoán ảnh -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2"> Dự đoán ảnh</h3>
+                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+import numpy as np
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+
+MODELS = {
+    "DenseNet": load_model('models/densenet_model.h5'),
+    "Resnet50": load_model('models/resnet50_model.h5'),
+    "Vgg19": load_model('models/vgg19_model.h5'),
+}
+
+def predict_image(image_path, model_name):
+    if model_name not in MODELS:
+        return {"error": "Chưa chọn mô hình máy học nào! Hãy chọn 1 mô hình để dự đoán."}
+    model = MODELS[model_name]
+    
+    img = load_img(image_path, target_size=(224, 224))
+    img_array = img_to_array(img) / 255.0
+    img_array = np.expand_dims(img_array, axis=0)
+
+    predictions = model.predict(img_array)
+    
+    class_names = ['NORMAL', 'COVID-19', 'PNEUMONIA (VIÊM PHỔI)']
+    class_probabilities = predictions.tolist()[0]  
+    
+    result = {class_names[i]: round(class_probabilities[i], 4) for i in range(len(class_names))}
+    
+    return result
+    </code></pre>
+                <p class="mt-2 text-gray-300">Tải mô hình máy học và dự đoán loại bệnh dựa trên ảnh X-quang.</p>
+            </div>
+
+
+            <!-- Container: Đoạn mã mẫu -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">Kết quả dự đoán </h3>
+                <pre
+                    class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><img src="../assets/images/Alcare.png" alt=""></pre>
+                <p class="mt-2 text-gray-300">Đoạn mã trên sử dụng mô hình ResNet-50 để nhận diện ảnh X-quang.</p>
+            </div>
+
+
+
+            <!-- Container: Kết quả thực nghiệm -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2"> Kết quả thực nghiệm</h3>
+                <table class="w-full text-left text-gray-300 border-collapse border border-gray-700">
+                    <thead>
+                        <tr class="bg-gray-700">
+                            <th class="p-2 border border-gray-600">Mô hình</th>
+                            <th class="p-2 border border-gray-600">Độ chính xác (Accuracy)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-800">
+                            <td class="p-2 border border-gray-600">ResNet-50</td>
+                            <td class="p-2 border border-gray-600">95.3%</td>
+                        </tr>
+                        <tr class="bg-gray-700">
+                            <td class="p-2 border border-gray-600">VGG-19</td>
+                            <td class="p-2 border border-gray-600">93.8%</td>
+                        </tr>
+                        <tr class="bg-gray-800">
+                            <td class="p-2 border border-gray-600">DenseNet</td>
+                            <td class="p-2 border border-gray-600">96.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Container: Kết luận & Hướng phát triển -->
+            <div class="mb-6 p-4 bg-gray-900 rounded">
+                <h3 class="text-xl font-semibold text-white mb-2">🔮 Kết luận & Hướng phát triển</h3>
+                <ul class="list-disc list-inside text-gray-300">
+                    <li>Mô hình <strong>DenseNet</strong> đạt hiệu suất tốt nhất với độ chính xác 96.1%.</li>
+                    <li>Học chuyển giao giúp cải thiện tốc độ huấn luyện.</li>
+                    <li>Ứng dụng AI có thể hỗ trợ bác sĩ chẩn đoán nhanh hơn.</li>
+                    <li><strong>Hướng phát triển:</strong> Triển khai mô hình trên Web với Flask hoặc FastAPI.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sơ đồ hoạt động Flask xử lý ảnh X-quang -->
+
+
+
+        <!-- Nút quay về trang chủ -->
+        <div class="text-center">
+            <a href="../index.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Quay về Trang
+                Chủ</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
