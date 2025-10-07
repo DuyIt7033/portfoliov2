@@ -1,3 +1,10 @@
+:root{
+  --clr-bg: #2f3130;        /* nền tối chính */
+  --clr-surface: #2f3130;   /* bề mặt card/modal */
+  --clr-text: #f9f3e7;      /* chữ chính */
+  --clr-accent: #426f86;    /* điểm nhấn xanh steel */
+  --clr-warm: #f9b931;      /* điểm nhấn vàng */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,19 +15,9 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  background: linear-gradient(
-    60deg,
-    #00091d,
-    #0f172a,
-    #0f172a,
-    #1d294f,
-    #3a576d,
-    #26154a,
-    #0f172a
-    
-  );
-color: white;
-justify-content: center;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  justify-content: center;
 }
 /* Các con số sẽ dùng sans-serif */
 .hadnumber {
@@ -70,7 +67,7 @@ justify-content: center;
 .skill-card:hover {
   transition: 0.5s;
   transform: scale(1.1); /* Phóng to khi hover */
-  background: #fbfbfb ;
+  background: rgba(249, 185, 49, 0.06);
   
 }
 
@@ -82,3 +79,21 @@ justify-content: center;
   transition: 0.5s;
   transform: scale(1.05);
  }
+
+/* Custom helpers for new palette */
+.heading-grad{
+  background-image: linear-gradient(90deg, var(--clr-accent), var(--clr-warm));
+}
+.surface{
+  background-color: rgba(47,49,48,0.6);
+}
+.surface-strong{
+  background-color: var(--clr-surface);
+}
+.border-accent{
+  border-color: rgba(66,111,134,0.4);
+}
+.dot-accent{
+  background-color: var(--clr-warm);
+  box-shadow: 0 0 0 6px rgba(249,185,49,0.18);
+}

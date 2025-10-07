@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="../src/plus.css" />
 </head>
 
-<body class="bg-gray-100">
+<body style="background:#2f3130;color:#f9f3e7">
 
     <!-- Container chính -->
     <div class="container mx-auto p-6">
 
         <!-- Tên project -->
-        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6 ">
-            <h1 class="text-3xl font-bold ">AIraCare</h1>
+        <div class="shadow-md rounded-lg p-6 mb-6 " style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
+            <h1 class="text-3xl font-bold " style="color:#A0D6E3">AIraCare</h1>
 
 
             <ul class="list-disc pl-5 mt-3">
@@ -38,7 +38,7 @@
             <h2 class="text-2xl font-semibold text-white mb-4">Chi tiết về dự án</h2>
 
             <!-- Container: Mục tiêu dự án -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2">Mục tiêu</h3>
                 <p class="text-gray-300">
                     Xây dựng và triển ứng dụng với mô hình học sâu có khả năng phân tích và xử lý ảnh X-quang phổi nhằm
@@ -50,9 +50,9 @@
 
 
             <!-- Container: Các bước thực hiện -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2">📌 Các bước thực hiện</h3>
-                <ol class="list-decimal list-inside text-gray-300">
+                <ol class="list-decimal list-inside" style="color:#f9f3e7">
                     <li>Cài đặt môi trường (Python, TensorFlow, CUDA)</li>
                     <li>Xử lý dữ liệu ảnh X-quang</li>
                     <li>Huấn luyện mô hình ResNet-50, VGG-19, DenseNet</li>
@@ -62,7 +62,7 @@
             </div>
 
             <!-- Sơ đồ hoạt động Flask xử lý ảnh X-quang -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2"> Sơ đồ hoạt động</h3>
                 <div class="flex justify-center p-2">
                     <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -110,19 +110,19 @@
 
 
             <!-- Container: Cấu hình Flask -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2"> Cấu hình Flask</h3>
-                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+                <pre class="p-4 rounded text-white overflow-x-auto" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)"><code>
 import os
 from flask import Flask, render_template, send_from_directory, flash, redirect, url_for, request
     </code></pre>
-                <p class="mt-2 text-gray-300">Khởi tạo ứng dụng Flask, cấu hình thư mục tải lên và khóa bí mật.</p>
+                <p class="mt-2" style="color:#f9f3e7">Khởi tạo ứng dụng Flask, cấu hình thư mục tải lên và khóa bí mật.</p>
             </div>
 
             <!-- Container: Xử lý tải lên ảnh -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2">Xử lý tải lên ảnh</h3>
-                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+                <pre class="p-4 rounded text-white overflow-x-auto" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)"><code>
 def handle_image_upload(image):
     if not image or image.filename == '':
         flash('Chưa chọn ảnh !', 'error')
@@ -132,13 +132,13 @@ def handle_image_upload(image):
         return False
     return True
     </code></pre>
-                <p class="mt-2 text-gray-300">Hàm kiểm tra tính hợp lệ của ảnh được tải lên.</p>
+                <p class="mt-2" style="color:#f9f3e7">Hàm kiểm tra tính hợp lệ của ảnh được tải lên.</p>
             </div>
 
             <!-- Container: Kiểm tra ảnh X-quang -->
-            <div class="mb-6 p-4 bg-gray-900 rounded">
+            <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
                 <h3 class="text-xl font-semibold text-white mb-2">Kiểm tra ảnh X-quang</h3>
-                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+                <pre class="p-4 rounded text-white overflow-x-auto" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)"><code>
 def is_xray_image(image_path):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     contrast = img.max() - img.min()
@@ -154,21 +154,21 @@ def is_xray_image(image_path):
         return False
     return True
     </code></pre>
-                <p class="mt-2 text-gray-300">Hàm kiểm tra đặc điểm của ảnh để xác định xem có phải ảnh X-quang không.
+                <p class="mt-2" style="color:#f9f3e7">Hàm kiểm tra đặc điểm của ảnh để xác định xem có phải ảnh X-quang không.
                 </p>
             </div>
 
             <!-- Container: Xử lý tải lên tệp ZIP -->
             <div class="mb-6 p-4 bg-gray-900 rounded">
                 <h3 class="text-xl font-semibold text-white mb-2"> Xử lý tải lên tệp ZIP</h3>
-                <pre class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><code>
+                <pre class="p-4 rounded text-white overflow-x-auto" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)"><code>
 def upload_zip():
     zip_file = request.files.get("zip_file")
     if not zip_file or zip_file.filename == '':
         flash("Chưa chọn tệp !", "error")
         return redirect(url_for('upload_zip'))
     </code></pre>
-                <p class="mt-2 text-gray-300">Xử lý tải lên tệp ZIP và trích xuất nội dung để dự đoán.</p>
+                <p class="mt-2" style="color:#f9f3e7">Xử lý tải lên tệp ZIP và trích xuất nội dung để dự đoán.</p>
             </div>
 
             <!-- Container: Dự đoán ảnh -->
@@ -210,9 +210,8 @@ def predict_image(image_path, model_name):
             <!-- Container: Đoạn mã mẫu -->
             <div class="mb-6 p-4 bg-gray-900 rounded">
                 <h3 class="text-xl font-semibold text-white mb-2">Kết quả dự đoán </h3>
-                <pre
-                    class="bg-gray-700 p-4 rounded text-white overflow-x-auto "><img src="../assets/images/Alcare.png" alt=""></pre>
-                <p class="mt-2 text-gray-300">Đoạn mã trên sử dụng mô hình ResNet-50 để nhận diện ảnh X-quang.</p>
+                <pre class="p-4 rounded text-white overflow-x-auto " style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)"><img src="../assets/images/Alcare.png" alt=""></pre>
+                <p class="mt-2" style="color:#f9f3e7">Đoạn mã trên sử dụng mô hình ResNet-50 để nhận diện ảnh X-quang.</p>
             </div>
 
 
@@ -220,23 +219,23 @@ def predict_image(image_path, model_name):
             <!-- Container: Kết quả thực nghiệm -->
             <div class="mb-6 p-4 bg-gray-900 rounded">
                 <h3 class="text-xl font-semibold text-white mb-2"> Kết quả thực nghiệm</h3>
-                <table class="w-full text-left text-gray-300 border-collapse border border-gray-700">
+                <table class="w-full text-left border-collapse" style="color:#f9f3e7;border:1px solid rgba(66,111,134,0.4)">
                     <thead>
-                        <tr class="bg-gray-700">
+                        <tr style="background:rgba(66,111,134,0.2)">
                             <th class="p-2 border border-gray-600">Mô hình</th>
                             <th class="p-2 border border-gray-600">Độ chính xác (Accuracy)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-gray-800">
+                        <tr style="background:rgba(47,49,48,0.6)">
                             <td class="p-2 border border-gray-600">ResNet-50</td>
                             <td class="p-2 border border-gray-600">95.3%</td>
                         </tr>
-                        <tr class="bg-gray-700">
+                        <tr style="background:rgba(66,111,134,0.2)">
                             <td class="p-2 border border-gray-600">VGG-19</td>
                             <td class="p-2 border border-gray-600">93.8%</td>
                         </tr>
-                        <tr class="bg-gray-800">
+                        <tr style="background:rgba(47,49,48,0.6)">
                             <td class="p-2 border border-gray-600">DenseNet</td>
                             <td class="p-2 border border-gray-600">96.1%</td>
                         </tr>
@@ -262,7 +261,7 @@ def predict_image(image_path, model_name):
 
         <!-- Nút quay về trang chủ -->
         <div class="text-center">
-            <a href="../index.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Quay về Trang
+            <a href="../index.html" class="px-4 py-2 rounded" style="background:#426f86;color:#f9f3e7">Quay về Trang
                 Chủ</a>
         </div>
 
