@@ -1,109 +1,83 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css">  -->
-    <title> SCL Tralvel</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../src/plus.css" />
+    <title>SCL Travel</title>
 </head>
+<body class="bg-[#0f0f0f] text-gray-300">
 
-<body style="background:#2f3130;color:#f9f3e7">
-    <div class="container mx-auto p-6">
-
-        <!-- Giới thiệu dự án -->
-        <div class="shadow-md rounded-lg p-6 mb-6" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
-            <h1 class="text-3xl font-bold" style="color:#A0D6E3">Web Giới Thiệu Du Lịch ĐBSCL</h1>
-            <ul class="list-disc pl-5 mt-3" style="color:#f9f3e7">
-                
-                <li><strong>Ngôn ngữ lập trình:</strong> PHP, JavaScript, HTML, CSS</li>
-                <li><strong>Cơ sở dữ liệu: </strong> MySQL</li>
-                <li><strong>Quản lí code:</strong> Git  </li>
-                <a href="https://github.com/DuyIt7033/scl-travel">Link: DuyIt7033/scl-travel</a>
-            </ul>
-        </div>
-
-
-
-
-        <!-- Chức năng chính -->
-        <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
-            <h3 class="text-xl font-semibold text-white mb-2"> Mục tiêu dự án</h3>
-            <p class="text-gray-300">
-                Xây dựng một trang web giúp người dùng tìm hiểu thông tin về du lịch tại Đồng Bằng Sông Cửu Long
-                (ĐBSCL),
-                bao gồm các địa điểm, ẩm thực, văn hóa, và dịch vụ du lịch.
-            </p>
-            <h3 class="pt-2 text-xl font-semibold text-white mb-2"> Các chức năng chính</h3>
-            <ul class="list-disc list-inside" style="color:#f9f3e7">
-                <li> Tìm kiếm địa điểm du lịch</li>
-                <li> Lọc bài viết theo tỉnh hoặc loại hình</li>
-                <li> Quản lý bài viết (Thêm, sửa, xóa)</li>
-                <li> Hệ thống đăng ký & quản lý người dùng</li>
-            </ul>
-        </div>
-
-        <!-- Database Schema -->
-        <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
-            <h3 class="text-xl font-semibold text-white mb-2"> Sơ đồ class hệ thống</h3>
-            <pre
-                class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><img src="../assets/images/scl/Class_scl.png" ></pre>
-        </div>
-        <div class="mb-6 p-4 bg-gray-900 rounded">
-            <h3 class="text-xl font-semibold text-white mb-2"> Sơ đồ use case</h3>
-            <pre
-                class="bg-gray-700 p-4 rounded text-white overflow-x-auto"><img src="../assets/images/scl/use_case_scl.png" alt="">
-                </pre>
-                
-        </div>
-        <div class="mb-6 p-4 bg-gray-900 rounded">
-            <h3 class="text-xl font-semibold text-white mb-2"> Giao diện người dùng</h3>
-            <div class="p-4 rounded grid grid-cols-1 md:grid-cols-2 gap-4" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)">
-          
-                <img src="../assets/images/scl/ui1.png" alt="UI 1" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/uiscl2.png" alt="UI 2" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/uiscl3.png" alt="UI 3" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/ulscl4.png" alt="UI 4" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/ulscl5.png" alt="UI 5" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/ulscl6.png" alt="UI 6" class="w-auto h-64 object-contain mx-auto">
+    <div class="project-content">
+        <div class="relative w-full h-64 overflow-hidden border-b border-gray-800">
+            <img src="assets/images/Dbscl.png" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent flex items-end p-8">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">SCL Travel Blog</h1>
+                    <p class="text-purple-400 font-mono">Khám phá du lịch Đồng Bằng Sông Cửu Long</p>
+                </div>
             </div>
         </div>
 
-        <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
-            <h3 class="text-xl font-semibold text-white mb-2"> Giao diện Admin</h3>
-            <div class="p-4 rounded grid grid-cols-1 md:grid-cols-2 gap-4" style="background:#2f3130;border:1px solid rgba(66,111,134,0.4)">
-          
-                <img src="../assets/images/scl/uiad1scl.png" alt="UI 1" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/uiad2scl.png" alt="UI 2" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/uiad3scl.png" alt="UI 3" class="w-auto h-64 object-contain mx-auto">
-                <img src="../assets/images/scl/uiad4scl.png" alt="UI 4" class="w-auto h-64 object-contain mx-auto">
-                
+        <div class="p-8 md:p-12 max-w-5xl mx-auto space-y-12">
+            
+            <div class="bg-[#1a1a1a] p-6 rounded-xl border border-gray-700">
+                <ul class="flex flex-wrap gap-6 text-sm">
+                    <li><strong class="text-white">Backend:</strong> PHP Native</li>
+                    <li><strong class="text-white">Database:</strong> MySQL</li>
+                    <li><strong class="text-white">Frontend:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong class="text-white">Repo:</strong> <a href="https://github.com/DuyIt7033/scl-travel" target="_blank" class="text-cyan-400 hover:underline">GitHub Link</a></li>
+                </ul>
             </div>
-        </div>
-        
 
-        <!-- Hướng phát triển -->
-        <div class="mb-6 p-4 rounded" style="background:rgba(47,49,48,0.6);border:1px solid rgba(66,111,134,0.4)">
-            <h3 class="text-xl font-semibold text-white mb-2"> Hướng phát triển</h3>
-            <ul class="list-disc list-inside" style="color:#f9f3e7">
-                <li>📌 Triển khai API RESTful để mở rộng hệ thống</li>
-                <li>🔑 Bổ sung tính năng đăng ký, đăng nhập và phân quyền</li>
-                <li>💳 Tích hợp thanh toán trực tuyến để đặt tour du lịch</li>
-            </ul>
-        </div>
+            <section class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-4 border-l-4 border-purple-500 pl-3">Mục tiêu</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Xây dựng nền tảng thông tin du lịch toàn diện cho khu vực ĐBSCL. Hệ thống cho phép người dùng tìm kiếm địa điểm, xem bài viết review và admin quản lý nội dung dễ dàng.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-4 border-l-4 border-purple-500 pl-3">Chức năng chính</h2>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-gray-400">
+                        <li><b>Tìm kiếm & Lọc:</b> Theo tỉnh thành, loại hình du lịch.</li>
+                        <li><b>Quản trị (CMS):</b> Thêm/Sửa/Xóa bài viết, quản lý User.</li>
+                        <li><b>Tương tác:</b> Đăng ký, Đăng nhập, Bình luận.</li>
+                    </ul>
+                </div>
+            </section>
 
-        <!-- Nút quay về trang chủ -->
-        <div class="text-center">
-            <a href="../index.html" class="px-4 py-2 rounded" style="background:#426f86;color:#f9f3e7">🏠 Quay về Trang
-                Chủ</a>
-        </div>
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-6 border-l-4 border-purple-500 pl-4">Thiết kế hệ thống</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-[#1a1a1a] p-4 rounded-xl border border-gray-800">
+                        <h4 class="text-center text-white font-bold mb-4">Class Diagram</h4>
+                        <img src="assets/images/scl/Class_scl.png" class="w-full h-auto rounded opacity-90 hover:opacity-100 transition">
+                    </div>
+                    <div class="bg-[#1a1a1a] p-4 rounded-xl border border-gray-800">
+                        <h4 class="text-center text-white font-bold mb-4">Use Case Diagram</h4>
+                        <img src="assets/images/scl/use_case_scl.png" class="w-full h-auto rounded opacity-90 hover:opacity-100 transition">
+                    </div>
+                </div>
+            </section>
 
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-6 border-l-4 border-purple-500 pl-4">Giao diện người dùng</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="assets/images/scl/ui1.png" class="rounded border border-gray-700 hover:scale-105 transition shadow-lg">
+                    <img src="assets/images/scl/uiscl2.png" class="rounded border border-gray-700 hover:scale-105 transition shadow-lg">
+                    <img src="assets/images/scl/uiad1scl.png" class="rounded border border-gray-700 hover:scale-105 transition shadow-lg">
+                </div>
+            </section>
+
+            <section class="bg-gradient-to-r from-[#1a1a1a] to-[#202020] p-6 rounded-xl border border-gray-800">
+                <h2 class="text-xl font-bold text-white mb-4"><i class="fas fa-rocket text-purple-500 mr-2"></i> Hướng phát triển</h2>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-green-500"></i> Triển khai API RESTful để mở rộng Mobile App.</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-green-500"></i> Tích hợp thanh toán online cho chức năng đặt tour.</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-green-500"></i> Nâng cấp bảo mật (CSRF Protection).</li>
+                </ul>
+            </section>
+
+        </div>
     </div>
 </body>
-
 </html>
